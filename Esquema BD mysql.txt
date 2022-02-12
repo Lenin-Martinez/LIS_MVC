@@ -1,0 +1,13 @@
+user='root';
+password = '';
+db = 'LIS_MVC_Biblioteca';
+
+
+	Tabla='Libros'
+_____Columnas:
+-ID int(10)
+-Titulo varchar(50)
+-Autor varchar(75)
+-Anio int(4)
+-Genero varchar(50)
+-Precio
