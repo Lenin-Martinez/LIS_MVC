@@ -10,4 +10,14 @@ _____Columnas:
 -Autor varchar(75)
 -Anio int(4)
 -Genero varchar(50)
--Precio
+-Precio float
+-img varchar(5000)
+-Sinopsis varchar(10000)
+
+
+	Tabla 'Autor'
+_____Columnas
+-ID int(10)
+-Autor varchar(50)
+-img varchar(5000)
+-Biografia varchar(10000)

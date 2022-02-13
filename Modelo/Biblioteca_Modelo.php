@@ -8,6 +8,19 @@
    }
 
 
+   function BuscarAutor($Autor)
+   {
+      $Consulta="SELECT * FROM AUTOR WHERE AUTOR LIKE '" .$Autor. "%' ";
+      $Conexion = ConexionBD();
+      $result = $Conexion->query($Consulta);
+      $Autores = array();
+      while ($Autor = $result->fetch())
+      {
+         $Autores[] = $Autor;
+      }
+      return $Autores;
+   }
+
 
    function BuscarLibro($Titulo, $Autor, $Anio, $Genero){
       
