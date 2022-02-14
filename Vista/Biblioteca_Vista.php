@@ -15,10 +15,13 @@
   <div class="divParametros">
     <h1>Buscar libro</h1>
     <form method="post">
-      <input type="text" name="txtTitulo" placeholder="Titulo del libro"><br><br>
-      <input type="text" name="txtAutor" placeholder="Autor"><br><br>
-      <input type="text" name="txtAnio" placeholder="Año"><br><br>
-      <input type="text" name="txtGenero" placeholder="Genero"><br><br>
+      <!--Se ha quitado el autocompletado-->
+      <input type="text" name="txtTitulo" placeholder="Titulo del libro" autocomplete="off"><br><br>
+      <!--Agregada la expresion regular para nombres-->
+      <input type="text" name="txtAutor" placeholder="Autor" pattern="^([A-Za-z]{1}[a-zñáéíóú]+[\s]*)+$" title="Ej: Alberto" autocomplete="off"><br><br>
+      <!--Agregada la expresion regular para años-->
+      <input type="text" name="txtAnio" placeholder="Año" pattern="[12][0-9]{3}|[1-9]{3}" title="Ej: 1930" autocomplete="off"><br><br>
+      <input type="text" name="txtGenero" placeholder="Genero" autocomplete="off"><br><br>
       <br>
       <input type="submit" name="btnBuscar" value="Buscar">
     </form>
